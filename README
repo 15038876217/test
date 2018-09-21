@@ -1,0 +1,18 @@
+1.改变默认swiper的点标记的颜色---直接修改不可以，只能通过父元素来修改
+.wrapper >>> .swiper-pagination-bullet-active
+  background: #fff
+2.// 解决移动端click点击的延迟刷新问题---需安装
+import fastClick from 'fastclick'
+fastClick.attach(document.body)
+3.// 解决移动端1像素问题---在公共css文件中设置了border.css
+import 'styles/border.css'
+4.// 字体图标引入--http://www.iconfont.cn/(阿里图标)
+import 'styles/iconfont.css'
+5.// 轮播插件安装---在GitHub上搜索(vue-awesome-swiper@2.6.7)
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
+6. 配置公共名字在build(webpack.base.conf.js中)
+'@': resolve('src'),
+'styles': resolve('src/assets/styles')
+
