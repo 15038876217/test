@@ -15,4 +15,12 @@ Vue.use(VueAwesomeSwiper)
 6. 配置公共名字在build(webpack.base.conf.js中)
 '@': resolve('src'),
 'styles': resolve('src/assets/styles')
-
+7.css简洁语法使用stylus，在css文件中创建varibles.styl后缀的css文件把公共的样式写在里面
+@import '~styles/varibles.styl'
+eg: $bgColor = #00bcd4
+8.解决轮播图网速慢没加载出来时，它下面的元素默认一打开是在最上边位置，则使用padding-bottom来解决
+.wrapper
+  width: 100%
+  height: 0
+  overflow: hidden
+  padding-bottom: 37.5%（图片的宽高比）
