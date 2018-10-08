@@ -2,7 +2,7 @@
 <div>
    <home-header></home-header>
    <home-swiper></home-swiper>
-   <home-icons :list="iconList"></home-icons>
+   <home-icons></home-icons>
 </div>
 </template>
 <script>
@@ -18,7 +18,6 @@ export default {
   },
   data () {
     return {
-      iconList: []
     }
   }
 }
