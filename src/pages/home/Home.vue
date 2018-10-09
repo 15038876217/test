@@ -15,10 +15,13 @@ export default {
     HomeHeader,
     HomeSwiper,
     HomeIcons
+<<<<<<< HEAD
   },
   data () {
     return {
     }
+=======
+>>>>>>> origin/index-recommend
   }
 }
 </script>

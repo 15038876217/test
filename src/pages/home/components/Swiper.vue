@@ -35,7 +35,11 @@ export default {
   width: 100%
   height: 0
   overflow: hidden
+<<<<<<< HEAD
   padding-bottom: 27.25%
+=======
+  padding-bottom: 26.25%
+>>>>>>> origin/index-recommend
   .swiper-img
     width: 100%
 </style>
