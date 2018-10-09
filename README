@@ -15,7 +15,6 @@ Vue.use(VueAwesomeSwiper)
 6. 配置公共名字在build(webpack.base.conf.js中)
 '@': resolve('src'),
 'styles': resolve('src/assets/styles')
-<<<<<<< HEAD
 7. 在分分支上开发之后合并到master上
 git add .
 git commit -m ' add icons'
@@ -39,7 +38,6 @@ git push
         bottom: .44rem
         box-sizing: border-box
         padding: .1rem
-=======
 7.css简洁语法使用stylus，在css文件中创建varibles.styl后缀的css文件把公共的样式写在里面
 @import '~styles/varibles.styl'
 eg: $bgColor = #00bcd4
@@ -49,4 +47,3 @@ eg: $bgColor = #00bcd4
   height: 0
   overflow: hidden
   padding-bottom: 37.5%（图片的宽高比）
->>>>>>> origin/index-recommend
