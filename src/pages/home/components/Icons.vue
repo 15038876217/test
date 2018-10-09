@@ -49,16 +49,25 @@ export default {
             id: '0008',
             imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png',
             desc: '动物园'  
+          }, {
+            id: '0009',
+            imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png',
+            desc: '动物园'  
           }]
       }
   },
   computed: {
-      pages () {
-        const page = []
-        this.iconList.forEach((item,index) => {
-           const page = Math.floor(index/8)
-        })
-      }
+    pages () {
+      const pages = []
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 8)
+        if (!pages[page]) {
+          pages[page] = []
+        }
+        pages[page].push(item)
+      })
+      return pages
+    }
   }
 }
 </script>
