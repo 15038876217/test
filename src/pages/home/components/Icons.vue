@@ -1,22 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div class="icons">
-    <swiper>
-      <swiper-slide v-for="(page, index) of pages" :key="index">
-        <div
-          class="icon"
-          v-for="item of page"
-          :key="item.id"
-        >
-          <div class='icon-img'>
-            <img class='icon-img-content' :src='item.imgUrl' />
-          </div>
-          <p class="icon-desc">{{item.desc}}</p>
-        </div>
-      </swiper-slide>
-    </swiper>
-  </div>
-=======
 <div class="icons">
   <swiper>
     <swiper-slide v-for="(page,index) of pages" :key="index">
@@ -29,9 +11,7 @@
     </swiper-slide>
   </swiper> 
 </div>
->>>>>>> origin/index-recommend
 </template>
-
 <script>
 export default {
   name: 'HomeIcons',
@@ -39,42 +19,6 @@ export default {
     return {
       iconList: [{
         id: '0001',
-<<<<<<< HEAD
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点热门'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '滑雪季'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点热门'
-      }, {
-        id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '滑雪季'
-      }, {
-        id: '0005',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点热门'
-      }, {
-        id: '0006',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '滑雪季'
-      }, {
-        id: '0007',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点热门'
-      }, {
-        id: '0008',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点热门'
-      }, {
-        id: '0009',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png',
-        desc: '景点热门'
-=======
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
         desc: '景点门票'
       }, {
@@ -109,7 +53,6 @@ export default {
         id: '0009',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/47/c2b659e048b11602.png',
         desc: '动物园'  
->>>>>>> origin/index-recommend
       }]
     }
   },
