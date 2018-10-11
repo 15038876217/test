@@ -21,6 +21,7 @@ export default {
   data () {
     return { 
        swiperOption: {
+         // not auto carsouel
         autoplay: false
       }  
     }
