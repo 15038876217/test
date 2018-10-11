@@ -10,6 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    // Configuration agent Prevention of on-line problems 
     proxyTable: {
       '/api': {
         target: 'http://localhost:8080',
