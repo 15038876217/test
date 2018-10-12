@@ -13,7 +13,7 @@ module.exports = {
     // Configuration agent Prevention of on-line problems 
     proxyTable: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:8081',
         pathRewrite:{
           '^/api': '/static/mock'
         }
