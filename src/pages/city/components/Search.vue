@@ -5,7 +5,10 @@
 </template>
 <script>
 export default {
-    name: 'CitySearch'
+    name: 'CitySearch',
+    props: {
+      cities: Object
+    }
 }
 </script>
 <style lang="stylus" scoped>
