@@ -36,25 +36,28 @@ export default {
     return {
     }
   },
+  mounted () {
+    this.getHomeInfo()
+  },
   methods: {
     getHomeInfo () {
-      axios.get('/api/index.json').then(this.getHomeInfoSucc)
+      var date=new Date();
+      var timer=date.getTime().toString();
+      axios.get('../../../static/mock/index.json?t='+timer).then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
       res = res.data
+      console.log(res)
       if (res.ret && res.data) {
         const data = res.data
+        console.log(data)
         this.city = data.city
-        this.swiperList = data.swiperList  
+        this.swiperList = data.swiperList
         this.iconList = data.iconList
         this.recommendList = data.recommendList
         this.weekendList = data.weekendList
       }
-      console.log(res)
     }
-  },
-  mounted () {
-    this.getHomeInfo()
   }
 }
 </script>

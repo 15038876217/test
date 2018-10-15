@@ -2,7 +2,7 @@
 <div>
    <div class="title">周末去哪儿</div>
     <ul>
-        <li class="border-bottom item" v-for="item of list" :key="item.id"> 
+        <li class="border-bottom item" v-for="item of list" :key="item.id">
             <div class="item-img-wrapper">
                <img  class="item-img" :src="item.imgUrl" alt="">
             </div>
@@ -47,6 +47,5 @@ export default {
     .item-desc
       line-height: .4rem
       color: #ccc
-      ellipsis()    
+      ellipsis()
 </style>
-

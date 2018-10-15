@@ -9,7 +9,7 @@
         <p class='icons-desc'>{{item.desc}}</p>
       </div>
     </swiper-slide>
-  </swiper> 
+  </swiper>
 </div>
 </template>
 <script>
@@ -19,11 +19,11 @@ export default {
     list: Array
   },
   data () {
-    return { 
-       swiperOption: {
-         // not auto carsouel
+    return {
+      swiperOption: {
+        // not auto carsouel
         autoplay: false
-      }  
+      }
     }
   },
   computed: {

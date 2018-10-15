@@ -94,10 +94,10 @@
 import Bscroll from 'better-scroll'
 // better-scroll
 export default {
-    name: 'CityList',
-    mounted () {
-        this.scroll = new Bscroll(this.$refs.wrapper)
-    }
+  name: 'CityList',
+  mounted () {
+    this.scroll = new Bscroll(this.$refs.wrapper)
+  }
 }
 </script>
 <style lang="stylus" scoped>

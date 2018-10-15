@@ -2,7 +2,7 @@
 <div>
    <div class="title">热销推荐</div>
     <ul>
-        <li class="border-bottom item" v-for="item of list" :key="item.id"> 
+        <li class="border-bottom item" v-for="item of list" :key="item.id">
            <img  class="item-img" :src="item.imgUrl" alt="">
             <div class="item-info">
                 <p class="item-title">{{item.title}}</p>
@@ -60,4 +60,3 @@ export default {
         border-radius: .06rem
         color: #fff
 </style>
-

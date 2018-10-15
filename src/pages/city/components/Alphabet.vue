@@ -7,7 +7,7 @@
 </template>
 <script>
 export default {
-    name: 'CityAlphabet'
+  name: 'CityAlphabet'
 }
 </script>
 <style lang="stylus" scoped>
